@@ -7,13 +7,12 @@ Point::Point()
 	x = 0;
 	y = 0;
 	cout << "Construct by default\n";
-	count++;
 }
 Point::Point(int a, int b)
 {
 	x = a;
 	y = b;
-	count++;
+	cout << "Construct by 2 params\n";
 }
 void Point::Init(int a, int b)
 {
@@ -32,9 +31,36 @@ void Point::Print()
 	cout << "X: " << x << "\tY: " << y << endl;
 }
 
-void Point::PrintCount()
+Point Point::operator+(Point& b)// obj.Sum(obj2)'
 {
-	cout << "Count = " << count << endl;
+	Point res;
+	res.x = this->x + b.x;
+	res.y = this->y + b.y;
+	return res;
+}
+
+Point Point::operator*(Point& b)
+{
+	Point res;
+	res.x = this->x * b.x;
+	res.y = this->y * b.y;
+	return res;
+}
+
+Point Point::operator-(Point& b)
+{
+	Point res;
+	res.x = this->x - b.x;
+	res.y = this->y - b.y;
+	return res;
+}
+
+Point Point::operator/(Point& b)
+{
+	Point res;
+	res.x = this->x / b.x;
+	res.y = this->y / b.y;
+	return res;
 }
 
 int Point::count = 0; // начальная инициализация статик поля

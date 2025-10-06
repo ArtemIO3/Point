@@ -3,8 +3,7 @@ class Point
 { 
 	// реализация класса
 	int x;
-	int y;	
-	static int count; // создаем статическое поле
+	int y;
 public:// интерфейс класса, прототипы методов
 	Point();
 	Point(int a, int b);
@@ -12,6 +11,10 @@ public:// интерфейс класса, прототипы методов
 	void Init();  // ввод с клавиатуры
 	void Print();
 
-	static void PrintCount();
+	static int count; // создаем статическое поле
+	Point operator+(Point& b);
+	Point operator*(Point& b);
+	Point operator-(Point& b);
+	Point operator/(Point& b);
 };
 
