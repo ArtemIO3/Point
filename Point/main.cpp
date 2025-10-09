@@ -10,10 +10,36 @@ int main()
 	//Point d = a.Sum(b);
 	/*d1.Print();
 	d.Print();*/
-	Point d4 = a * b;
+	//Point d4 = a * b;
+	//d4.Print();
+	//Point d2 = b - a;
+	//d2.Print();
+	//Point d3 = a / b;
+	//d3.Print();
+	Point d4 = a + 10;
 	d4.Print();
-	Point d2 = b - a;
-	d2.Print();
-	Point d3 = a / b;
-	d3.Print();
+	if (a > b)
+	{
+		cout << "a>b\n";
+	}
+	else if(a < b)
+	{
+		cout << "a>b\n";
+	}
+	else if (a == b)
+	{
+		cout << "a==b\n";
+	}
+	else if (a != b)
+	{
+		cout << "a!=b\n";
+	}
+	else if (a >= b)
+	{
+		cout << "a>=b\n";
+	}
+	else if (a <= b)
+	{
+		cout << "a<=b\n";
+	}
 }
