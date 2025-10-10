@@ -23,5 +23,7 @@ public:// интерфейс класса, прототипы методов
 	bool operator !=(Point& b);
 	bool operator >=(Point& b);
 	bool operator <=(Point& b);
+	Point& operator++();//++a
+	Point& operator--();
 };
 

@@ -4,7 +4,30 @@ using namespace std;
 
 int main()
 {
-	Point a(1, 2), b(3, 4), c(10, 20);
+	Point a(10, 5), b(3, 4);
+	//Point c = ++a;
+	//c.Print();
+	//a.Print();
+	Point c = --a;
+	c.Print();
+	a.Print();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	//Point d = a + b; 
 	//Point d1 = a.operator+(b);
 	//Point d = a.Sum(b);
@@ -16,7 +39,7 @@ int main()
 	//d2.Print();
 	//Point d3 = a / b;
 	//d3.Print();
-	Point d4 = a + 10;
+	/*Point d4 = a + 10;
 	d4.Print();
 	if (a > b)
 	{
@@ -41,5 +64,5 @@ int main()
 	else if (a <= b)
 	{
 		cout << "a<=b\n";
-	}
+	}*/
 }
