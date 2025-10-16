@@ -12,18 +12,22 @@ public:// интерфейс класса, прототипы методов
 	void Print();
 
 	static int count; // создаем статическое поле
-	Point operator+(Point& b);
-	Point operator*(Point& b);
-	Point operator-(Point& b);
-	Point operator/(Point& b);
-	Point operator+(int a);
-	bool operator >(Point& b);
-	bool operator <(Point& b);
-	bool operator ==(Point& b);
-	bool operator !=(Point& b);
-	bool operator >=(Point& b);
-	bool operator <=(Point& b);
-	Point& operator++();//++a
-	Point& operator--();
+	//Point operator+(Point& b);
+	//Point operator*(Point& b);
+	//Point operator-(Point& b);
+	//Point operator/(Point& b);
+	/*Point operator+(int a);*/
+	//bool operator >(Point& b);
+	//bool operator <(Point& b);
+	//bool operator ==(Point& b);
+	//bool operator !=(Point& b);
+	//bool operator >=(Point& b);
+	//bool operator <=(Point& b);
+	//Point& operator++();//++a
+	//Point& operator--();
+	void SetX(int a);
+	void SetY(int b);
+	int GetX();
+	int GetY();
 };
 

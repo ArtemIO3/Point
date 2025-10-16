@@ -31,112 +31,132 @@ void Point::Print()
 	cout << "X: " << x << "\tY: " << y << endl;
 }
 
-Point Point::operator+(Point& b)// obj.Sum(obj2)'
+//Point Point::operator+(Point& b)// obj.Sum(obj2)'
+//{
+//	Point res;
+//	res.x = this->x + b.x;
+//	res.y = this->y + b.y;
+//	return res;
+//}
+//
+//Point Point::operator*(Point& b)
+//{
+//	Point res;
+//	res.x = this->x * b.x;
+//	res.y = this->y * b.y;
+//	return res;
+//}
+//
+//Point Point::operator-(Point& b)
+//{
+//	Point res;
+//	res.x = this->x - b.x;
+//	res.y = this->y - b.y;
+//	return res;
+//}
+//
+//Point Point::operator/(Point& b)
+//{
+//	Point res;
+//	res.x = this->x / b.x;
+//	res.y = this->y / b.y;
+//	return res;
+//}
+//
+//Point Point::operator+(int a)
+//{
+//	return Point(x+a,y+a);
+//}
+//
+//bool Point::operator>(Point& b)
+//{
+//	if (x > b.x && y > b.y)
+//	{
+//		return true;
+//	}
+//	else {
+//    return false;
+//	}
+//	
+//}
+//
+//bool Point::operator<(Point& b)
+//{
+//	if (x < b.x && y < b.y)
+//	{
+//		return true;
+//	}
+//	return false;
+//}
+//
+//bool Point::operator==(Point& b)
+//{
+//	if (x == b.x && y == b.y)
+//	{
+//		return true;
+//	}
+//	return false;
+//}
+//
+//bool Point::operator!=(Point& b)
+//{
+//	if (x != b.x && y != b.y)
+//	{
+//		return true;
+//	}
+//	return false;
+//}
+//
+//bool Point::operator>=(Point& b)
+//{
+//	if (x >= b.x && y >= b.y)
+//	{
+//		return true;
+//	}
+//	return false;
+//}
+//
+//bool Point::operator<=(Point& b)
+//{
+//	if (x <= b.x && y <= b.y)
+//	{
+//		return true;
+//	}
+//	return false;
+//}
+//
+//Point& Point::operator++()
+//{
+//	x += 10;
+//	y += 10;
+//	return *this;
+//}
+//
+//Point& Point::operator--()
+//{
+//	x -= 2;
+//	y -= 2;
+//	return *this;
+//}
+
+void Point::SetX(int a)
 {
-	Point res;
-	res.x = this->x + b.x;
-	res.y = this->y + b.y;
-	return res;
+	x = a;
 }
 
-Point Point::operator*(Point& b)
+void Point::SetY(int b)
 {
-	Point res;
-	res.x = this->x * b.x;
-	res.y = this->y * b.y;
-	return res;
+	y = b;
 }
 
-Point Point::operator-(Point& b)
+int Point::GetX()
 {
-	Point res;
-	res.x = this->x - b.x;
-	res.y = this->y - b.y;
-	return res;
+	return x;
 }
 
-Point Point::operator/(Point& b)
+int Point::GetY()
 {
-	Point res;
-	res.x = this->x / b.x;
-	res.y = this->y / b.y;
-	return res;
-}
-
-Point Point::operator+(int a)
-{
-	return Point(x+a,y+a);
-}
-
-bool Point::operator>(Point& b)
-{
-	if (x > b.x && y > b.y)
-	{
-		return true;
-	}
-	else {
-    return false;
-	}
-	
-}
-
-bool Point::operator<(Point& b)
-{
-	if (x < b.x && y < b.y)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool Point::operator==(Point& b)
-{
-	if (x == b.x && y == b.y)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool Point::operator!=(Point& b)
-{
-	if (x != b.x && y != b.y)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool Point::operator>=(Point& b)
-{
-	if (x >= b.x && y >= b.y)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool Point::operator<=(Point& b)
-{
-	if (x <= b.x && y <= b.y)
-	{
-		return true;
-	}
-	return false;
-}
-
-Point& Point::operator++()
-{
-	x += 10;
-	y += 10;
-	return *this;
-}
-
-Point& Point::operator--()
-{
-	x -= 2;
-	y -= 2;
-	return *this;
+	return y;
 }
 
 
